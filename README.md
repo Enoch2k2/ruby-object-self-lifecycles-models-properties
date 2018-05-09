@@ -1,3 +1,4 @@
+# Ruby OO Lifecycles, Models, Properties, Self
 ## **Notes** ##
 ### learn what an object is
   - An object is a source of actions and properties
