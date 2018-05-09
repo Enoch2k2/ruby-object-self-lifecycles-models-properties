@@ -33,6 +33,7 @@
 ### learn about class scopes and difference between class scopes and instance scopes, class methods vs instance methods how to call each one, and about the value of self in a class method vs self in an instance method.
   - **self**: refers to what is calling the method you place self inside. Self refers to the class in a class method, self refers to the instance in an instance method.
   - **class method**: A Method that the class itself calls, an instance method cannot call these methods. (ex: Dog.all would retrieve all the dog instances).
+  - **class variable**: A variable defined that only the class (should) knows about.
 
 ### think about real life example of an object's use
 ### BONUS: create a find_by class method
