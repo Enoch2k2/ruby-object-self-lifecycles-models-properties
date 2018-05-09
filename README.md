@@ -1,5 +1,6 @@
 # Ruby OO Lifecycles, Models, Properties, Self
 -  [Notes](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#notes)
+  - [learn what an object is](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#learn-what-an-object-is)
 ## **Notes** ##
 ### learn what an object is
   - An object is a source of actions and properties
