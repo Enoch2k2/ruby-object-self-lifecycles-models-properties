@@ -17,7 +17,7 @@
   - **instantiate**: creating a new object
   - **instance**: refers to a unique object created from a class
 
-### learn how to create an object (Dog)
+### learn how to create an object (Dog) (See Examples)
 ### learn what instance methods are (bark)
   - **Instance Method**: An actionable method that only an instance can call. Can also be used to retrieve object properties or set them.
 ### learn what instance variables are (name)
