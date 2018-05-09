@@ -40,3 +40,107 @@
 ### BONUS: create a find_or_new_by class method
 
 ## **Examples** ##
+```
+class Dog
+  attr_accessor :name
+  attr_reader :breed, :treats
+  
+  @@all = []
+  
+  # instance method that's called as soon as an instance is born
+  def initialize(name, breed)
+    # self refers to instance
+    self.name = name
+    @breed = breed
+    @treats = []
+    self.save
+  end
+  
+  #instance method (actionable) bark
+  def bark
+    puts "woof!"
+  end
+  
+  def details
+    puts "The dogs name is #{self.name} and it's breed is #{self.breed}"
+  end
+  
+  def save
+    #self refers to the instance
+    # .class refers to the instance's class
+    # .all refers to the class variables return value (array)
+    self.class.all.push(self)
+  end
+  
+  def self.all
+    @@all
+  end
+  
+  # writer method
+  # def name=(name)
+  #   # instance variable = value
+  #   @name = name
+  # end
+  
+  # reader method
+  # def name
+  #   @name
+  # end
+end
+
+#variable = Class.new for creating a new instance of that class, will run initialize with any arguments passed in
+
+# dog = Dog.new("Fido", "Shitzu")
+# dog.name = "Sally" (dogs name is now Sally) example of using writer method
+# dog.details (gives us back the details of the dog), example of using an instance method
+# Dog.new("Lassie", "Golden Retriever")
+# Dog.new("Butch", "Mutt")
+# Dog.all.each do |dog|
+#   dog.details
+# end
+```
+Real life example of a User
+```
+class User
+  attr_accessor :username, :password, :logged_in
+  attr_writer :email
+  
+  @@all = []
+  
+  def initialize(email, username, password)
+    self.email = email
+    self.username = username
+    self.password = password
+    self.save
+  end
+  
+  def save
+    self.class.all.push(self)
+  end
+  
+  def self.all
+    @@all
+  end
+  
+  def self.find_by_username(username)
+    self.all.detect{|user| user.username == username }
+  end
+  
+  def self.login(username, password)
+    user = User.find_by_username(username)
+    if user.nil?
+      puts "Cannot find user by that username"
+    elsif user.password != password
+      puts "Does not match password"
+    else
+      puts "successfully logged in"
+      user.logged_in = true
+    end
+  end
+  
+end
+
+User.new("test@test.com", "test", "testtest")
+
+User.login("test", "testtest")
+```
