@@ -1,6 +1,13 @@
 # Ruby OO Lifecycles, Models, Properties, Self
 -  [Notes](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#notes)
     - [learn what an object is](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#learn-what-an-object-is)
+    - [Ruby Vocabulary](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#ruby-vocabulary)
+    - [learn what instance methods are (bark)](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#learn-what-instance-methods-are-bark)
+    - [learn what instance variables are (name)](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#learn-what-instance-variables-are-name)
+    - [learn how to access instance variables outside of the class](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#learn-how-to-access-instance-variables-outside-of-the-class)
+    - [learn about the lifecycle of an object, when an object is born, how do we access it after it's been instantiated so that it isn't lost after creation](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#learn-about-the-lifecycle-of-an-object-when-an-object-is-born-how-do-we-access-it-after-its-been-instantiated-so-that-it-isnt-lost-after-creation)
+    - [learn about class scopes and difference between class scopes and instance scopes, class methods vs instance methods how to call each one, and about the value of self in a class method vs self in an instance method.](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#learn-about-class-scopes-and-difference-between-class-scopes-and-instance-scopes-class-methods-vs-instance-methods-how-to-call-each-one-and-about-the-value-of-self-in-a-class-method-vs-self-in-an-instance-method)
+- [Examples](https://github.com/Enoch2k2/ruby-object-self-lifecycles-models-properties#examples)
 ## **Notes** ##
 ### learn what an object is
   - An object is a source of actions and properties
